@@ -9,6 +9,7 @@ header{ -webkit-animation-delay 1s;}
     background-color: #474747;
     margin-bottom: 0;
     border: none;
+    opacity: 100;
 }
 
 .logo{
@@ -32,24 +33,36 @@ header{ -webkit-animation-delay 1s;}
     -webkit-box-shadow: 1px 0px 0px 0px rgba(255,255,255,.1);
      -moz-box-shadow: 1px 0px 0px 0px rgba(255,255,255,.1);
      -box-shadow: 1px 0px 0px 0px rgba(255,255,255,.1);
+/*    z-index: 100;*/
 }
 .navbar-brand{padding-right: 0;}
-.navbar-default .navbar-nav>li>a {color: #fff;}
+.navbar-default .navbar-nav>li>a {color: #fff;
+z-index: 100;}
 
 .navbar-default .navbar-toggle{
     margin-top: 25px;
     border-color: #646464;
+    opacity: 100;
 }
 
 header{
-    height: 600px;
+    height: 150px;
     text-align: center;
-    background-color: #6d6d6d;
-    padding-top: 120px;
+/*    background-color: #6d6d6d;*/
+    opacity: 100;
+    text-co
+    
+/*    padding-top: 120px;*/
+/*
     background: url(../img/IMG_6114.jpg);
     background-attachment: fixed;
-    padding-top: 100px;
+*/
+/*
+    padding-top: 10px;
+    padding-bottom: 10px;
+
     
+*/
 }
 
 .profile-picture{
@@ -59,15 +72,21 @@ header{
 header h2{
     margin-top: 50px;
     font-size: 3.5em;
-    color: #fff;
+    color: black;
     font-family: 'Oswald', sans-serif;
+    opacity: 100;
+    font-weight: bold;
+    
+    
 }
 
 header p{
     padding: 0 2px;
     font-size: 1.5em;
-    color: #fff;
+    color: black;
     font-family: 'Open Sans', sans-serif;
+    opacity: 100;
+    font-weight: bold;
 }
 .main-content{
     padding: 100px 100px;
@@ -82,13 +101,13 @@ header p{
 }
 
 .main-content h4{
-    color: #3f3f3f;
+    color: black;
     font-size: 1.5em;
     font-family: 'Oswald', sans-serif;
 }
 
 .main-content h4 small{
-    color: #a0a0a0;
+    color: black;
     font-size: .6em;
     border-left: 1px solid #a0a0a0;
     border-color: #a0a0a0;
@@ -97,12 +116,12 @@ header p{
 }
 
 .main-content .about-me p{
-    color: #a0a0a0;
+    color: black;
     font-size: 1.2em;
 }
 
 .main-content .contact p{
-    color: #a0a0a0;
+    color: black;
     font-size: 1.2em;
 }
 .contact .row{
@@ -187,4 +206,13 @@ input:focus{
     background-color= #0099FF;
     padding-right= 50px;
     padding-left= 50px;
+}
+p{
+    color: black;
+}
+
+h4, h5{
+    color: black;
+    font-weight: bold;
+    
 }

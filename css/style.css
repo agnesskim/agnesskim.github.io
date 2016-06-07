@@ -1,3 +1,12 @@
 body{
-    background-color: aquamarine;
+    background: url(/img/pinkdots.jpg) repeat;
+    opacity: 0.90;
 }
+
+.navbar navbar-default{
+    z-index: 100;
+}
+.blueberry{
+    max-width: 700px;
+    margin-top: 90px;
+            }

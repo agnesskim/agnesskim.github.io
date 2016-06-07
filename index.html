@@ -3,18 +3,30 @@
 <html>
     <head>
         <title>My Portfolio</title>
+        <meta name="viewport" content="width=divice-width, intial-scale=1.0">
             <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
             <link rel="stylesheet" type="text/css" href="./css/styles.css">
             <link href="css/customs.css" rel="stylesheet">
             <script type="text/javascript" src="./scripts/jQuery.js"></script>
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
             <link href="css/animate.css" rel=stylesheet>
+            <link href="css/style.css" rel=stylesheet>
+            <link rel="stylesheet" href="blueberry.css"/>
         
+             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+            <script src="jquery.blueberry.js"></script>
+            <script>
+            $(window).load(function(){
+                $('.blueberry').blueberry();
+            });
+            </script>
     </head>
     
     <body>
         
-        <nav class="navbar navbar-default" animated bounceInDown>
+        
+        
+        <nav class="navbar navbar-default" >
           <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -35,6 +47,8 @@
                 <li><a href="#education">EDUCATION PASSION</a></li>
                 <li><a href="#projects">PROJECTS</a></li> 
                 <li><a href="#contact">CONTACT</a></li> 
+                <li><script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+<script type="IN/Share" data-url="https://www.linkedin.com/in/agnes-kim-b72746121" data-counter="top"></script></li>
               </ul>
              
             </div><!-- /.navbar-collapse -->
@@ -42,12 +56,25 @@
 </nav>
         <header class="container-fluid" animated fadeInLeft>
             <div class="row">
-                <img src="img/propic.png" class="img-circle profile-picture">
+<!--                <img src="img/propic.png" class="img-circle profile-picture">-->
                 <h2>HELLO AND WELCOME TO MY PORTFOLIO</h2>
                 <p>My name is Agnes Kim.</p>
             </div>
         
         </header>
+        
+           <div id="doc">
+            <div id="content">
+                <div class="blueberry">
+                    <ul class="slides">
+                        <li><img src="/img/me.png"/></li>
+                        <li><img src="/img/family.jpg"/></li>
+                        <li><img src="/img/download.png"/></li>
+                        <li><img src="/img/meb.jpg"/></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         
         <div class="main-content container">
             <div class="row">
@@ -56,10 +83,10 @@
                 <div id="about-me">
                     <h3>ABOUT ME</h3>
                     <h4>AGNES KIM<small>STUDENT</small></h4>
-                    <p>	I am 19 year old female passionate about technology and programming. I am currently a second year student intending on studying Computer Science and Education at the University of Virginia.</p> 
+                    <p>	I am 19 year old female passionate about technology and programming. I am currently a second year student studying Computer Science and Education at the University of Virginia.</p> 
 <p>	My hobbies include a wide variety of things such as, cooking - I love trying new recipes. To making crafts and paintings, for home decor. </p>
 <p>	My family has always been passionate about technology. My grandfather started a startup which helped create software to teach English to Korean citizens after the Korean War. My mom was a software tutor for students in Korea, and both my brother and I study computer science at the University of Virginia.</p> 
-<p>	I am interesting in learning about web technologies. I am a self-learner and very motivated, and currently am going through a variety of pluralsight courses online to become better at web development. I have a background in Java and C++, and learning PHP, HTML5, Jquery, CSS and MySQL through coursework (Databases and Web PL) as well as through online courses.</p>
+<p>	I am interesting in learning about web technologies. I am a self-learner and very motivated, and currently am going through a variety of pluralsight courses online to become better at web development. I have a background in Java and C++, PHP, HTML5, Jquery, CSS and MySQL through coursework (Databases and Web PL) as well as through online courses.</p>
                 </div>
                 
                 <div id="resume">
@@ -129,8 +156,7 @@
                         <!-- contact form-->
                         <div class="col-md-3" quick-info>
                             <div><i class="fa fa-envelope-o"></i> <p>ak5nt@virginia.edu</p></div>
-                            <div><i class="fa fa-map-marker"></i><p>114 Carrollton Terrace Apt J
-                                Charlottesville, Va 22903</p></div>
+                            <div><i class="fa fa-map-marker"></i><p>9630 Bedder Stone Place</p><p>Bristow, VA 20136</p></div>
                             <div><i class="fa fa-mobile"></i> <p>571-606-8861</p></div>
                         </div>
                         
