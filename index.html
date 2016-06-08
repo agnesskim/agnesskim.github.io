@@ -1,544 +1,589 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8"/>
-        <title>Agnes Kim's Portfolio</title>
-        <meta name="viewport" content="width=divice-width, intial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
-            <link rel="stylesheet" type="text/css" href="./css/styles.css">
-            <link href="css/customs.css" rel="stylesheet">
-            <script type="text/javascript" src="./scripts/jQuery.js"></script>
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-            <link href="css/animate.css" rel=stylesheet>
-            <link href="css/style.css" rel=stylesheet>
-            <link rel="stylesheet" href="blueberry.css"/>
-            <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Pacifico" />
-        <style type="text/css">
-            *{
-                margin: 0;
-                border: 0;
-                padding: 0;
-            }
-            
-            body{
-                background-color: lightgrey;
-                font: 14px/20px Arial, San-Serif;
-                color: black;
-                margin: 0;
-                opacity: 0.90;
-                
-            }
-            h1, h2, h3, h4, h5{
-                color: black;
-            }
-            
-            h1{
-                text-align: center;
-                font-size: 250%;
-                line-height: 120%;
-                padding: 5% 0;
-                text-decoration: underline;
-                font-weight: bold;
-                font-style: italic;
-                font-family: Pacifico, Arial;
-            }
-            
-            #welcome{
-                font-family: Pacifico, Arial;
-                text-decoration: none;
-            }
-            
-            h2{
-/*                text-decoration: underline;*/
-                line-height: 280%;
-                padding-left: 2%
-            }
-            
-            h3{
-                line-height: 110%;
-                padding: 5% 0;
-            }
-            
-            p{
-                padding: 1%;
-            }
-            
-            img{
-                text-align: center;
-                max-width: 100%;
-                height: auto;
-                width: auto;
-            }
-            
-            a{
-                color: black;
-                text-decoration: none;
-                font-weight: bold;
-            }
-            
-            a:hover{
-                color: #FFF;
-                text-decoration: underline;
-            }
-            header{
-                background: #474747;
-                width: 100%;
-                height: 86px;
-                position: fixed;
-                top: 0;
-                left: 0;
-                z-index: 100;
-                opacity: 0.90;
-            }
-            
-            #logo{
-                margin: 20px;
-                float: left;
-                width: 200px;
-                height: 60px;
-                background: url(img/Agnes.png) no-repeat center;
-            }
-            
-            nav{
-                float: right;
-                padding: 35px 20px 20px 0;
-            }
-            
-            #menu-icon{
-                display: hidden;
-                width: 40px;
-                height: 40px;
-                background: url(http://www.w3newbie.com/wp-content/uploads/icon.png) center;
-                font-family: Pacifico, Arial;
-                
-            }
-            
-            a:hover#menu-icon{
-                border-radius: 4px 4px 0 0;
-            }
-            
-            ul{
-                list-style: none;
-                
-            }
-            
-            nav ul li{
-                display: inline-block;
-                float: left;
-                padding: 10px;
-                font-family: Pacifico, Arial;
-            }
-            
-            .current{
-                color: #FFF;
-                text-decoration: underline;
-            }
-            
-          
-            #doc{
-                margin: 40px 0;
-            }
-            
-            #content{
-                margin: 0 auto;
-                max-width: 1140px;
-                margin-top: 110px;
-            }
-            
-            .blueberry{
-                max-width: 800px;
-                margin-top: 110px;
-            }
-            
-            section{
-                width: 29%;
-                float: left;
-                margin: 2% 2%;
-                text-align: center;
-            }
-            
-            .clear{
-                clear:both;
-            }
-            
-            article{
-                float: left;
-                margin: 0 auto;
-                width: 50%;
-                height: auto;
-                padding: 4%;
-            }
-            
-            #resume{
-                float: center;
-                margin: 0 auto;
-                width: 35%;
-                height: auto;
-                padding: 3%;
-            }
-            
-            #education{
-                float: center;
-                margin: 0 auto;
-                width: 35%;
-                height: auto;
-                padding: 3%;
-            }
-            #contact{
-                float: left;
-                margin: 0 auto;
-                width: 35%;
-                height: auto;
-                padding: 3%;
-            }
-            .contact .row{
-                padding-top: 20px;
-            }
-            input{
-                width: 100%;
-                height: 50px;
-                padding: 0 20px;
-                border: 3px solid #b9b9b9;
-                margin-bottom: 20px;
-                color: #b9b9b9;
-                font-family: 'Oswald', sans-serif;
-                font-size: 1.3em;
-            }
 
-            .send{
-                width: 180px;
-                background-color: #fff;
-            }
+<head>
 
-            input:focus{
-                border: 3px solid #d559a8;
-                box-shadow: 0 0 5px 1px #d559a8;
-            }
-            .message{
-                height: 220px;
-            }
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-            .send{
-                width: 180px;
-                background-color: #fff;
-            }
+    <title>Agnes Kim's Portfolio</title>
 
-            .send:hover{
-                color: #d559a8;
-                border-color: #d559a8;
-            }
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-            .quick-info i{
-                position: absolute;
-                left: 0;
-                font-family: 'Oswald', sans-serif;
-               float: right;
-            }
-            
-            col-md-3{
-                float: right;
-            }
-            
-            .button {
-              display: inline-block;
-              border-radius: 12px;
-              background-color: darkgrey;
-              border: none;
-              color: #FFFFFF;
-              text-align: center;
-              font-size: 23px;
-              padding: 20px;
-              width: 200px;
-              transition: all 0.5s;
-              cursor: pointer;
-              margin: 5px;
-            align-content: center;
-              
-            }
+    <!-- Custom CSS -->
+    <link href="css/freelancer.css" rel="stylesheet">
 
-            .button span {
-              cursor: pointer;
-              display: inline-block;
-              position: relative;
-              transition: 0.5s;
-            }
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
-            .button span:after {
-              content: '»';
-              position: absolute;
-              opacity: 0;
-              top: 0;
-              right: -20px;
-              transition: 0.5s;
-            }
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-            .button:hover span {
-              padding-right: 25px;
-            }
+</head>
 
-            .button:hover span:after {
-              opacity: 1;
-              right: 0;
-}
-            
-            
-            footer{
-                background: #333333;
-                width: 100%;
-                overflow: hidden;
-                opacity: 0.90;
-            }
-            footer p, footer h3{
-                color: white;
-            }
-            footer p a {
-                color: #FFF;
-                text-decoration: none;
-            }
-            ul.social li {
-                display: inline;
-            }
-            ul.social li img{
-                height: 50px;
-            }
-            footer.second{
-                border-top: 1px solid #4D4E50;
-                background-color: #333333;
-                max-height: 50px;
-                text-align: center;
-                opacity: 0.95;
-            }
-            
-            /*--------Media-------*/
-            @media screen and (max-width: 478px) {
-                body {
-                    position: absolute;
-                }
-            }
-            @media screen and (max-width: 740px) {
-                header {
-                    position: absolute;
-                }
-                #menu-icon{
-                    display: inline-block;
-                    font-family: Pacifico, Arial;
-                }
-                nav ul, nav:active ul {
-                    display: none;
-                    position: absolute;
-                    padding: 20px;
-                    background: #405580;
-                    border: 1px solid #FFF;
-                    right: 20px;
-                    top: 60px;
-                    width: 50%;
-                    border-radius: 2px 0 2px 2px;
-                }
-                nav li{
-                    text-align: center;
-                    width: 100%;
-                    padding: 10px 0;
-                    margin: 0;
-                }
-                nav:hover ul{
-                    display: block;
-                }
-                section{
-                    float: left;
-                    width: 100%;
-                    margin: 0;
-                    padding: 0;
-                }
-                article{
-                    float: left;
-                    width: 100%;
-                    margin: 0;
-                    padding: 0;
-                }
-                #resume{
-                    float: center;
-                    width: 100%;
-                    margin: 0;
-                    padding: 0;
-                }
-                #education{
-                    float: center;
-                    width: 100%;
-                    margin: 0;
-                    padding: 0;
-                }
-                  #contact{
-                    float: left;
-                    margin: 0 auto;
-                    width: 35%;
-                    height: auto;
-                    padding: 3%;
-                }
-                .button {
-              display: inline-block;
-              border-radius: 12px;
-              background-color: darkgrey;
-              border: none;
-              color: #FFFFFF;
-              text-align: center;
-              font-size: 23px;
-              padding: 20px;
-              width: 200px;
-              transition: all 0.5s;
-              cursor: pointer;
-              margin: 5px;
-            align-content: center;
-              
-            }
+<body id="page-top" class="index">
 
-            .button span {
-              cursor: pointer;
-              display: inline-block;
-              position: relative;
-              transition: 0.5s;
-            }
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top">Agnes Kim</a>
+            </div>
 
-            .button span:after {
-              content: '»';
-              position: absolute;
-              opacity: 0;
-              top: 0;
-              right: -20px;
-              transition: 0.5s;
-            }
-
-            .button:hover span {
-              padding-right: 25px;
-            }
-
-            .button:hover span:after {
-              opacity: 1;
-              right: 0;
-}
-            }
-            
-        </style>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-        <script src="jquery.blueberry.js"></script>
-        <script>
-            $(window).load(function(){
-                $('.blueberry').blueberry();
-            });
-        </script>
-    </head>
-    
-    <body id="body">
-        
-        <header>
-            <a href="#" id="logo"></a>
-            <nav>
-                <a href="#" id="menu-icon"></a>
-                <ul>
-                    <li><a href="http://agnesskim.github.io/" class="current">HOME</a></li>
-                    <li><a href="#about-me" >ABOUT ME</a></li>
-                    <li><a href="#resume">RESUME</a></li>
-                    <li><a href="#education">EDUCATION PASSION</a></li>
-                    <li><a href="#projects">PROJECTS</a></li>
-                    <li><a href="#contact">CONTACT ME</a></li>
-                    <li><a href="https://www.linkedin.com/in/agnes-kim-b72746121"><img src ="img/linkedin.png" width="64" height="64" alt="Linkedin"/></a></li>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#resume">Resume</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#education">Education Passion</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#projects">Projects</a>
+                    </li>
+                    
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>
                 </ul>
-            </nav>
-        
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-        </header>
-        <section id="welcome">
-            <h2>HELLO AND WELCOME TO MY PORTFOLIO</h2>
-                <h4>My name is Agnes Kim.</h4>
-        </section>
-        
-        <div id="doc">
-            <div id="content">
-                <div class="blueberry">
-                    <ul class="slides">
-                        <li><img src="/img/me.png"/></li>
-                        <li><img src="/img/family.jpg"/></li>
-                        <li><img src="/img/download.png"/></li>
-                        <li><img src="/img/meb.jpg"/></li>
-                    </ul>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive" src="img/Untitled%20design.png" alt="Picture of Agnes Kim">
+                    <div class="intro-text">
+                        <span class="name">Welcome</span>
+                        <hr class="star-light">
+                        <span class="skills">Student</span>
+                    </div>
                 </div>
             </div>
         </div>
-    <div id="about-me">
-        <h1>ABOUT ME</h1>
-        <section>
-            <img src="/img/UVA.png">
-<!--            <h1>Best Trainers Around!</h1>-->
-            <p>My name is Agnes Kim, and I am 19 year old female passionate about technology and programming. I am currently a second year student studying Computer Science and Education at the University of Virginia.</p>
-        </section>
-        <section>
-            <img src="/img/cook-sip-cooking-class-13.jpeg"/>
-<!--            <h1>Local & Convenient.</h1>-->
-            <p>	My hobbies include a wide variety of things such as, cooking - I love trying new recipes. To making crafts and paintings, for home decor.</p>
-        </section>
-        <section>
-            <img src="/img/programming.jpg"/>
-<!--            <h1>Check Us Out - Free!</h1>-->
-            <p>I am interesting in learning about web technologies. I am a self-learner and very motivated, and currently am going through a variety of pluralsight courses online to become better at web development. I have a background in Java and C++, PHP, HTML5, Jquery, CSS and MySQL through coursework (Databases and Web PL) as well as through online courses.</p>
-        </section>
-    </div>
-        
-        <div class="clear"></div>
-    <div id="resume">
-            <h1>RESUME</h2>
-<!--            <form method="realresume.pdf">-->
-                <button class="button" onclick="window.open('realresume.pdf')" style="vertical-align:middle"><span>Click to view resume</span></button>
-<!--            </form>-->
-    </div>
-        
-        <div class="clear"></div>
-    <div id="education">
+    </header>
 
-            <h1>EDUCATION PASSION</h1>
-            <img src="/img/EDUCATION-text.jpg"/>
-            <p>I think the key to great teaching seems to be more alchemy than science, synthesis of inspirational hocus-pocus and endless drive of dedication and perserverance. My life’s mission is to find this key through my knowledge as a programmer and as a teacher.  In Barack Obama’s State of Union Address, he mentioned the word “change” notably and perpetually. What was his underlying message when he talked about this “change?” I believe “change” is referred to the new generation of technology and education. Nearly all aspect of society is swayed by technology in some form. Technology does not replace teachers, but instead allows them to further share their knowledge and expertise with society. Teachers partake in an important role in educating and inspiring the future pioneers, founders, and innovators that will change the world. From Barack Obama’s State of Union address, when he said “by providing Pre-K for all, offering every student the hands-on computer science and math classes that make them job-ready on day one,” this statement caught my attention. As I was listening to his speech, I felt that Obama was inside my head and articulated exactly what the future for elementary teachers would be. Without early childhood instructors, this “change” cannot commence. Elementary teachers play a pivotal role in shaping a child’s character by implanting the right ideals and preparing them for later education. They set the foundation for dreamers that will make an impact in the world. As a programmer and an educationist, I want to give back to society by applying my passion and insight about technology to the growing education system.</p>
+   
 
-    </div>
-    <div class="clear"></div>
+    <!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <p>My name is Agnes Kim, and I am 19 year old female passionate about technology and programming. I am currently a second year student studying Computer Science and Education at the University of Virginia.</p>
+<!--
+                </div>
+                <div class="col-lg-3">
+-->
+                    <p>My hobbies include a wide variety of things such as, cooking - I love trying new recipes. To making crafts and paintings, for home decor.</p>
+<!--
+                </div>
+                 <div class="col-lg-3">
+-->
+                    <p>I am interesting in learning about web technologies. I am a self-learner and very motivated, and currently am going through a variety of pluralsight courses online to become better at web development. I have a background in Java and C++, PHP, HTML5, Jquery, CSS and MySQL through coursework (Databases and Web PL) as well as through online courses.</p>
+                </div>
+<!--
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <a href="#" class="btn btn-lg btn-outline">
+                        <i class="fa fa-download"></i> Download Theme
+                    </a>
+                </div>
+-->
+            </div>
+        </div>
+    </section>
     
-    <div id="projects">
-        <h1>PROJECTS</h1>
-        <section>
-            <h4><b>Ghost Hunter Game</b></h4>
-            
-            <img src="/img/6.png"/>
-            <h5>Description</h5>
-                    <p>I took a class called Modern Software Development(CS 2110) during the spring semester of 2015. Professor Nada Basit assigned a project to the class to develop an Android game application with the theme of "ghost hunter." Each team had 4 members. There were specifications that had to be upheld such as having a splash screen and a simple functionality of a game that people could play. Because of this project, it introduced Agile programming method called Scrum. Scrum is basically an agile framework for managing complex projects. It's a software development methodology that focuses on teamwork in order to build a functional product.</p>
-                    <p>My role was the Quality Assurance Manager. I was in charge of the fuctionality of the game. As a quality assurance manager, I had to ponder about challenging situations about the functionality of the game. I was essentially a "tester", seeing if the game worked whenever the code was updated.</p>
-        </section>
-        <section>
-            <h4><b>Simple Online Store</b></h4>
-               
-            <img src="/img/7.png"/>
-            <h5>Description</h5>
-                    <p>I am currently taking Web Programming Languages, and I was assigned a project to create a simple online store. There were specifications: the buyers can buy any item by adding it to the shopping cart and then check out. After checking out, a summary of what the buyer bought is played on the browser. If the buyer does not check out, the items in the shopping cart ramin and will be displayed again once the buyer logs in again. If the user does check out, the next time the user logs in, the shopping cart will be completely empty. This project mainly focuses on the languages of PHP and HTML in conjuction with flat files, forms, cookies, and sessions </p>
-        </section>
-    </div>
-        
     
-    <div id="contact">
-         <h1>CONTACT ME</h1>
-                    <h4>GET IN TOUCH</h4>
-                            <form action="MAILTO:ak5nt@virginia.edu" method="post" enctype="text/plain">
-                            <input type="text" name="fullname" value="FULL NAME">
-                            <br>
-                            <input type="email" name="email" value="EMAIL ADDRESS">
-                            <br>
-                            <input class="message" type="text" name="message" value="MESSAGE">
-                            <br>
-                            <input class="send" type="submit" value="SEND MESSAGE">
-                            </form>
-                        
-                        
-         </div>
+    <!-- Resume Section -->
+    <section class="success2" id="resume">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Resume</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                 <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <a href="/realresume.pdf" class="btn btn-lg btn-outline">
+                        <i class="fa fa-download"></i> View Resume
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+        <!-- Education Section -->
+    <section class="success" id="education">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Education Passion</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+<!--
+                </div>
+                <div class="col-lg-3">
+-->
+                    <p>I think the key to great teaching seems to be more alchemy than science, synthesis of inspirational hocus-pocus and endless drive of dedication and perserverance. My life’s mission is to find this key through my knowledge as a programmer and as a teacher. In Barack Obama’s State of Union Address, he mentioned the word “change” notably and perpetually. What was his underlying message when he talked about this “change?” I believe “change” is referred to the new generation of technology and education. Nearly all aspect of society is swayed by technology in some form. Technology does not replace teachers, but instead allows them to further share their knowledge and expertise with society. Teachers partake in an important role in educating and inspiring the future pioneers, founders, and innovators that will change the world. From Barack Obama’s State of Union address, when he said “by providing Pre-K for all, offering every student the hands-on computer science and math classes that make them job-ready on day one,” this statement caught my attention. As I was listening to his speech, I felt that Obama was inside my head and articulated exactly what the future for elementary teachers would be. Without early childhood instructors, this “change” cannot commence. Elementary teachers play a pivotal role in shaping a child’s character by implanting the right ideals and preparing them for later education. They set the foundation for dreamers that will make an impact in the world. As a programmer and an educationist, I want to give back to society by applying my passion and insight about technology to the growing education system.</p>
+            </div>
+        </div>
+    </section>
+    
+     <!-- Portfolio Grid Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Projects</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/uvf.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/shop.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+<!--
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/circus.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/game.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/safe.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/submarine.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+-->
+            </div>
+        </div>
+    </section>
 
-        <footer class="second">
-            <p>©Copyright - Agnes Kim, 2016</p>
-        </footer>
-    
-    </body>
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Contact Me</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+                    <form name="sentMessage" action="MAILTO:ak5nt@virginia.edu" method="post" enctype="text/plain" id="contactForm" novalidate>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Name</label>
+                                <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Email Address</label>
+                                <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Phone Number</label>
+                                <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Message</label>
+                                <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <br>
+                        <div id="success"></div>
+                        <div class="row">
+                            <div class="form-group col-xs-12">
+                                <button type="submit" class="btn btn-success btn-lg">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+<!--
+                    <div class="footer-col col-md-4">
+                        <h3>Location</h3>
+                        <p>9630 Bedder Stone Place<br>B, CA 90210</p>
+                    </div>
+-->
+                    <div class="footer-col col-md-4">
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
+<!--
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+-->
+                            <li>
+                                <a href="https://www.linkedin.com/in/agnes-kim-b72746121" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+<!--
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                            </li>
+-->
+                        </ul>
+                    </div>
+<!--
+                    <div class="footer-col col-md-4">
+                        <h3>About Freelancer</h3>
+                        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+                    </div>
+-->
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Agnes Kim, 2016
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll visible-xs visible-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Ghost Hunter Android Game</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/uvf.png" class="img-responsive img-centered" alt="">
+                            <p>I took a class called Modern Software Development(CS 2110) during the spring semester of 2015. Professor Nada Basit assigned a project to the class to develop an Android game application with the theme of "ghost hunter." Each team had 4 members. There were specifications that had to be upheld such as having a splash screen and a simple functionality of a game that people could play. Because of this project, it introduced Agile programming method called Scrum. Scrum is basically an agile framework for managing complex projects. It's a software development methodology that focuses on teamwork in order to build a functional product.</p>
+                            <p>My role was the Quality Assurance Manager. I was in charge of the fuctionality of the game. As a quality assurance manager, I had to ponder about challenging situations about the functionality of the game. I was essentially a "tester", seeing if the game worked whenever the code was updated.</p>
+                            
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Simple Online Store</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/shop.png" class="img-responsive img-centered" alt="">
+                            <p>I took a class called Web Programming Languages, and I was assigned a project to create a simple online store. There were specifications: the buyers can buy any item by adding it to the shopping cart and then check out. After checking out, a summary of what the buyer bought is played on the browser. If the buyer does not check out, the items in the shopping cart ramin and will be displayed again once the buyer logs in again. If the user does check out, the next time the user logs in, the shopping cart will be completely empty. This project mainly focuses on the languages of PHP and HTML in conjuction with flat files, forms, cookies, and sessions.</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/game.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+-->
+<!--
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+-->
+
+     jQuery 
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/freelancer.js"></script>
+
+</body>
+
 </html>
